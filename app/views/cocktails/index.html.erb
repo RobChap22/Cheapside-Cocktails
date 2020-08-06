@@ -1,9 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <% @cocktails.each do |cocktail| %>
-        <%= link_to cocktail.name, cocktail_path(cocktail) %>
-      <% end %>
+      <div class="cards">
+        <% @cocktails.each do |cocktail| %>
+          <div class="card-category my-8">
+            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
