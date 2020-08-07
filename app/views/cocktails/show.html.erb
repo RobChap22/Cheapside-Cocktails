@@ -13,8 +13,12 @@
         </div>
         <div class="card-show-visual">
           <div class="card-show-icons">
-            <%= link_to 'add ingredients',  new_cocktail_dose_path(@cocktail) %>
-            <%= link_to 'back', cocktails_path %>
+            <%= link_to new_cocktail_dose_path(@cocktail) do %>
+              <i class="fas fa-pen-fancy"></i>
+            <% end %>
+            <%= link_to cocktails_path do %>
+              <i class="fas fa-angle-left"></i>
+            <% end %>
           </div>
           <%= cl_image_tag @cocktail.photo.key %>
         </div>
