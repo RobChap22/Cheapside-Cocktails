@@ -16,7 +16,7 @@
             <%= link_to 'add ingredients',  new_cocktail_dose_path(@cocktail) %>
             <%= link_to 'back', cocktails_path %>
           </div>
-          <%= image_tag "mojito-cocktails", alt: "cocktail" %>
+          <%= cl_image_tag @cocktail.photo.key %>
         </div>
         <div class="card-show-title">
           <h1><%= @cocktail.name %></h1>
