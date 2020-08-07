@@ -1,9 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <div class="cards">
+      <div class="cards mt-4">
         <% @cocktails.each do |cocktail| %>
-          <div class="card-category my-8">
+          <div class="card-category my-8" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.photo.key %>)">
             <%= link_to cocktail.name, cocktail_path(cocktail) %>
           </div>
         <% end %>
@@ -11,3 +11,5 @@
     </div>
   </div>
 </div>
+
+
