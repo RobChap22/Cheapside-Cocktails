@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>Cheapside</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-      <div class="container">
-        <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-        <p>Change your life and learn to code at one of our campuses around the world.</p>
-        <a class="btn btn-flat" href="#">Apply now</a>
-      </div>
+    <div class="banner" >
+      <h1>CHEAPSIDE COCKTAILS</h1>
+      <a class="btn btn-flat" href="#">Create a new cocktail</a>
+      <%= image_tag "logo", alt: "logo" %>
     </div>
     <%= yield %>
   </body>

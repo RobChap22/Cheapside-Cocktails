@@ -2,9 +2,26 @@ body {
   background-color: #000000;
 }
 
+p {
+  color: #28282A;
+  font-weight: lighter;
+  word-break: break-all
+}
+
 img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #28282A;
+  opacity: 0.5;
+}
+
+a:hover {
+  color: #28282A;
 }
 
 .card-category {
@@ -33,8 +50,33 @@ img {
   color: #28282A;
 }
 
+.card-show h1 {
+  color: #28282A;
+  word-break: break-all;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+// .card-show-text {
+//   display: flex;
+// }
+
 .card-show-visual {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-show-icons {
+  display: grow;
+  color: #28282A;
+  font-size: 30px;
+  padding-left: 42px;
+  letter-spacing: 16px;
+}
+
+a {
+  color: #28282A;
 }
 
 
